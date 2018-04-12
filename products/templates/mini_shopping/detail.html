@@ -1,0 +1,8 @@
+<h1>{{ product.product_name }}</h1>
+<a href="{% url 'products:category' product.category.id %}"><small>{{ product.category }}</small></a>
+
+<p><b>En stock:</b> {{ product.in_stock }}</p>
+
+<p> {{ product.description }}</p>
+
+<a href="{% url 'products:index' %}">Inicio</a>
